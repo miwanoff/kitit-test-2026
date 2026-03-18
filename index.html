@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kit Test</title>
+    <link rel="icon" type="image/png" href="./images/logo_kit_512.png">
+
+    <!-- Bootstrap та шрифти -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- HEADER (Глобальний) -->
+    <header class="bg-dark">
+        <img src="./images/bg3.png" alt="" class="hero-img">
+        <nav class="navbar navbar-expand-sm navbar-white">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html"><img src="./images/logo_kit_w.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mynavbar">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item"><a class="nav-link" href="./index.html">Головна</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://kitit.com.ua/about/" target="_blank">Про
+                                нас</a></li>
+                    </ul>
+                    <a class="btn btn-header start-btn menuBut" href="#">Пройти тест</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- СТАРТОВИЙ ЕКРАН -->
+    <div id="start-screen">
+        <div id="header" class="container px-5">
+            <div class="row gx-7 align-items-center justify-content-center">
+                <div id="width-header" class="col-lg-8 col-xl-7 col-xxl-5">
+                    <div class="my-5 text-center text-xl-start">
+                        <h1 id="h1-header" class="display-5 fw-bolder mb-2">Яка IT-професія підходить саме тобі?</h1>
+                        <h2 id="h2-header">Наш безкоштовний тест
+                            допоможе знайти свое у свiтi</h2>
+                        <!-- <p id="p-header">У світі, що змінюється щодня, важливо обрати справу, яка буде затребуваною
+                            завжди. Наш безкоштовний профорієнтаційний тест допоможе знайти своє <br> місце у світі
+                            технологій.</p> -->
+                        <div
+                            class="buttons-header d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
+                            <a class="btn btn-header start-btn" href="#">Пройти тест</a>
+                        </div>
+                    </div>
+                    <div class="img-header">
+                        <div class="img-header-box"><img src="./images/explorer-img.png" alt=""></div>
+                        <div class="img-header-box"><img src="./images/creator-img.png" alt=""></div>
+                        <div class="img-header-box"><img src="./images/communicator-img.png" alt=""></div>
+                        <div class="img-header-box"><img src="./images/constructor-img.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <main id="home-section">
+            <div id="block-how" class="container-blocks container p-5 my-5"
+                style=" max-width: 1150px; border-radius: 24px;">
+                <h2 style="font-size: 35px; font-family:Nunito, sans-serif;">Як працює тест? Це просто!</h2>
+                <div class="how-it-works__blocks">
+                    <article class="how-it-works__block how-it-works__block--one">
+                        <img src="./images/icon1.png" alt="icon">
+                        <h3>Пройди тест.</h3>
+                        <p>Натисни на кнопку <br> "Пройти тест".</p>
+                    </article>
+                    <article class="how-it-works__block how-it-works__block--two">
+                        <img src="./images/icon2.png" alt="icon">
+                        <h3>Відповідай на запитання.</h3>
+                        <p>Дай відповіді на 10 простих, але <br> важливих запитань про твої <br> інтереси та захоплення.
+                        </p>
+                    </article>
+                    <article class="how-it-works__block how-it-works__block--three">
+                        <img src="./images/icon3.png" alt="icon">
+                        <h3>Отримай результат та сертифікат.</h3>
+                        <p>Дізнайся, яка сфера IT тобі ближча, та <br> отримай знижку на навчання в "Кит".</p>
+                    </article>
+                </div>
+            </div>
+
+            <div class="container-blocks container p-5 my-5" style="max-width: 1150px; border-radius: 24px; backdrop-filter: blur(12px);
+    box-shadow:
+        8px 8px 8px rgba(66, 133, 244, 0.15),
+        inset -2px -2px 2px rgba(255, 255, 255, 1),
+        inset 2px 2px 2px rgba(255, 255, 255, 1);">
+                <section class="what-will-you-get">
+                    <h2 class="what-will-you-get__title">Що ти отримаєш після тесту?</h2>
+                    <div class="what-will-you-get__blocks">
+                        <article class="what-will-you-get__block what-will-you-get__block--one">
+                            <h3>Дізнайся, в чому твоя суперсила!</h3>
+                            <p>Ми підберемо курс, який ідеально підійде твоєму стилю мислення та схильностям. Це твій
+                                перший крок до професії мрії!</p>
+                        </article>
+                        <article class="what-will-you-get__block what-will-you-get__block--two">
+                            <h3>Сертифікат на знижку.</h3>
+                            <p>Кожен, хто пройде тест, отримає персональний сертифікат на знижку для навчання в "Кит".
+                                Не гай часу, інвестуй в освіту!</p>
+                        </article>
+                        <article class="what-will-you-get__block what-will-you-get__block--three">
+                            <h3>Знайди себе в IT.</h3>
+                            <p>Ти дізнаєшся, чим тобі дійсно цікаво займатись: створювати ігри, розробляти сайти, чи
+                                працювати <br> з візуалом. Наш тест на айтішника дасть тобі <br> чіткий орієнтир.</p>
+                        </article>
+                    </div>
+                    <div
+                        class="buttons-header button-main d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start main-buttons">
+                        <a class="btn btn-header start-btn" href="#">Пройти тест</a>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <!-- ЕКРАН ТЕСТУ -->
+    <div id="quiz-screen" class="d-none">
+        <div class="container my-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 col-xl-8">
+                    <div class="progress mb-4" style="height: 25px;">
+                        <div id="progress-bar" class="progress-bar progress-bar-striped progress-bar-animated"
+                            role="progressbar" style="width: 0%;"></div>
+                    </div>
+                    <div class="card shadow-lg border-0 rounded-lg"
+                        style="background-color: rgba(255, 255, 255, 0.25); backdrop-filter: blur(12px);
+    box-shadow: inset 0 -2px 2px rgba(255, 255, 255, 0.25), inset -2px 0 2px rgba(255, 255, 255, 0.15), inset 2px 0 4px rgba(255, 255, 255, 0.25);">
+                        <div class="card-body p-4 p-md-5">
+                            <h2 id="question-text" class="text-center mb-4"
+                                style="color: #004999; font-family: 'Nunito', sans-serif;">...</h2>
+                            <div id="answer-buttons" class="d-grid gap-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ЕКРАН РЕЗУЛЬТАТІВ -->
+    <div id="results-screen" class="d-none">
+        <div class="container my-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-10 col-xl-8">
+                    <div class="card shadow-lg border-0 rounded-lg"
+                        style="background-color: rgba(255, 255, 255, 0.25); backdrop-filter: blur(12px);
+    box-shadow: inset 0 -2px 2px rgba(255, 255, 255, 0.25), inset -2px 0 2px rgba(255, 255, 255, 0.15), inset 2px 0 4px rgba(255, 255, 255, 0.25);">
+                        <div class="card-body p-4 p-md-5">
+                            <div id="result-content"></div>
+                            
+                            <!-- НОВА ФОРМА ЗБОРУ ЛІДІВ (КРОК 2) -->
+                            <div id="lead-form-container" class="mt-4 d-none border-top pt-4">
+                                <h4 class="text-center mb-4" style="color: #004999; font-family: 'Nunito', sans-serif;">
+                                    Заповни форму, щоб отримати сертифікат зі знижкою та посилання на Telegram-бот
+                                </h4>
+                                <form id="lead-form">
+                                    <div class="row g-3">
+                                        <div class="col-md-6">
+                                            <div class="form-floating mb-3">
+                                                <input type="text" class="form-control" id="firstName" placeholder="Ім'я" required>
+                                                <label for="firstName">Ім'я</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-floating mb-3">
+                                                <input type="text" class="form-control" id="lastName" placeholder="Прізвище" required>
+                                                <label for="lastName">Прізвище</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-floating mb-3">
+                                                <input type="text" class="form-control" id="contact" placeholder="Телефон / Telegram" required>
+                                                <label for="contact">Телефон / Telegram</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-floating mb-3">
+                                                <input type="number" class="form-control" id="age" placeholder="Вік" required>
+                                                <label for="age">Вік</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center mt-3">
+                                        <button type="submit" id="submit-lead-btn" class="btn btn-primary btn-lg w-100">
+                                            Відправити та отримати доступ
+                                        </button>
+                                        <!-- Індикатор завантаження -->
+                                        <div id="form-loader" class="mt-3 d-none">
+                                            <div class="spinner-border text-primary" role="status">
+                                                <span class="visually-hidden">Завантаження...</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                            <!-- ФІНАЛЬНИЙ CTA (КРОК 4) -->
+                            <div id="final-cta-container" class="mt-4 d-none text-center border-top pt-4">
+                                <h4 class="mb-4" style="color: #004999; font-family: 'Nunito', sans-serif;">Чудово! Тепер ти можеш отримати свій сертифікат:</h4>
+                                <a id="tg-bot-link" href="#" target="_blank" class="btn btn-success btn-lg px-5 py-3 shadow-lg" style="border-radius: 30px; font-size: 1.2rem; background-color: #0088cc; border: none;">
+                                    <img src="./images/tg.png" alt="TG" style="width: 30px; margin-right: 10px; filter: brightness(0) invert(1);">
+                                    Отримати сертифікат у Telegram
+                                </a>
+                            </div>
+
+                            <hr class="my-4">
+                            <div class="text-center">
+                                <button id="restart-btn" class="btn btn-primary btn-lg">Пройти знову</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER (Глобальний) -->
+    <footer>
+        <div class="container-blocks container p-5 my-5" style="background: linear-gradient( to bottom right,rgba(0,73,153,0.25) 0%, rgba(0,122,255,0.25) 46%, rgba(66,133,244,0.25) 100% ); max-width: 1150px; border-radius: 20px; backdrop-filter: blur(12px); box-shadow:
+        8px 8px 8px rgba(66, 133, 244, 0.15),
+        inset -2px -2px 2px rgba(255, 255, 255, 1),
+        inset 2px 2px 2px rgba(255, 255, 255, 1);">
+            <div class="footer-top-block">
+                <div class="footer-logo">
+                    <a href="./index.html"><img src="./images/logo_kit_w.png" alt="logo" class="logo-footer"></a>
+                    <p class="footer-text"><a class="footer-text-a" href="https://kitit.com.ua/"
+                            target="_blank">Навчальний центр Kит</a> - сучасна IT освіта</p>
+                </div>
+                <div class="footer__right">
+                    <div class="footer__social">
+                        <h4>Соцмережі </h4>
+                        <hr>
+                        <ul>
+                            <li><a href="https://www.instagram.com/it_school_kit/" target="_blank"><img
+                                        src="./images/icons_instagram.png" alt=""></a></li>
+                            <li><a href="https://www.facebook.com/Itschoolkit/" target="_blank"><img
+                                        src="./images/logos_facebook.png" alt=""></a></li>
+                            <li><a href="https://t.me/IT_SCHOOL_KH" target="_blank"><img src="./images/tg.png"
+                                        alt=""></a></li>
+                            <li><a href="viber://chat?number=%2B380687012345" target="_blank"><img
+                                        src="./images/viber.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__contacts">
+                        <h4>Пошта</h4>
+                        <hr>
+                        <ul>
+                            <li><a href="mailto:info@kit.kh.ua" target="_blank"><img src="./images/gmail.png"
+                                        alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="hr-bott">
+            <div class="disclaimer"><p>Цей тест створений з метою самопізнання та розваги.<br>Результати мають виключно ознайомчий та рекомендаційний характер<br>і не є професійною експертизою чи обов'язковою інструкцією до дії.<br>Організатор не несе відповідальності за інтерпретацію результатів користувачем</p></div>
+            <div class="footer-bottom-block">
+                <div class="copyright"><a href="https://kitit.com.ua/" target="_blank">Авторське право © 2025 Кит®
+                    </a></div>
+                <!-- <div class="PrivacyPolicy"><a href="#" target="_blank">Політика конфіденційносі</a></div> -->
+                <div class="about"><a href="https://kitit.com.ua/about/" target="_blank">Про нас</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+            <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+        </g>
+    </svg>
+</body>
+
+</html><!--  -->
