@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- НОВА ФОРМА ЗБОРУ ЛІДІВ (КРОК 2) -->
+    <div id="lead-form-container" class="mt-4 d-none border-top pt-4">
+        <h4 class="text-center mb-4" style="color: #004999; font-family: 'Nunito', sans-serif;">
+            Заповни форму, щоб отримати сертифікат зі знижкою та посилання на Telegram-бот
+        </h4>
+        <form id="lead-form">
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Ім'я"
+                            required>
+                        <label for="firstName">Ім'я</label>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Прізвище"
+                            required>
+                        <label for="lastName">Прізвище</label>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="contact" name="contact"
+                            placeholder="Телефон / Telegram" required>
+                        <label for="contact">Телефон / Telegram</label>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-floating mb-3">
+                        <input type="number" class="form-control" id="age" name="age" placeholder="Вік" required>
+                        <label for="age">Вік</label>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <button type="submit" id="submit-lead-btn" class="btn btn-primary btn-lg w-100">
+                    Відправити та отримати доступ
+                </button>
+                <!-- Індикатор завантаження -->
+                <div id="form-loader" class="mt-3 d-none">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Завантаження...</span>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!--test-->
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyiLMJSC6LFs0NnkYhE2QIPS-uqGLgBFd36WDg_Mc1bTLJxecNL5BSFLt3EjNUv4jjgOw/exec';
+        const form = document.forms['lead-form']
+
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            // fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            //     .then(response => { console.log('Success!') })
+            //     .catch(error => { console.log('Error!') })
+            fetch(scriptURL, {
+                method: 'POST', // Тільки POST
+                mode: 'no-cors', // Важливо для обходу політики CORS в деяких випадках
+                body: new FormData(form)
+            })
+                .then(() => {
+                    // При no-cors ми не отримаємо JSON відповідь, 
+                    // тому просто вважаємо, що все ок, і показуємо кнопку ТГ
+                    //showTelegramButton();
+                    console.log('Success!');
+                })
+        })
+
+        // Deployment ID 
+        // Web app URL https://script.google.com/macros/s/AKfycbxsv1gi32sqpMf1LvH9C_dkCGa4-SBys5E-HVu_v5FU490Bf8kqkoM5S5aj1WqyzOnMJQ/exe
+    </script>
+
+</body>
+
+</html>

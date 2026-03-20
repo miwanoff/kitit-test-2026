@@ -156,7 +156,7 @@
     box-shadow: inset 0 -2px 2px rgba(255, 255, 255, 0.25), inset -2px 0 2px rgba(255, 255, 255, 0.15), inset 2px 0 4px rgba(255, 255, 255, 0.25);">
                         <div class="card-body p-4 p-md-5">
                             <div id="result-content"></div>
-                            
+
                             <!-- НОВА ФОРМА ЗБОРУ ЛІДІВ (КРОК 2) -->
                             <div id="lead-form-container" class="mt-4 d-none border-top pt-4">
                                 <h4 class="text-center mb-4" style="color: #004999; font-family: 'Nunito', sans-serif;">
@@ -166,25 +166,29 @@
                                     <div class="row g-3">
                                         <div class="col-md-6">
                                             <div class="form-floating mb-3">
-                                                <input type="text" class="form-control" id="firstName" placeholder="Ім'я" required>
+                                                <input type="text" class="form-control" id="firstName" name="firstName"
+                                                    placeholder="Ім'я" required>
                                                 <label for="firstName">Ім'я</label>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-floating mb-3">
-                                                <input type="text" class="form-control" id="lastName" placeholder="Прізвище" required>
+                                                <input type="text" class="form-control" id="lastName" name="lastName"
+                                                    placeholder="Прізвище" required>
                                                 <label for="lastName">Прізвище</label>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-floating mb-3">
-                                                <input type="text" class="form-control" id="contact" placeholder="Телефон / Telegram" required>
+                                                <input type="text" class="form-control" id="contact" name="contact"
+                                                    placeholder="Телефон / Telegram" required>
                                                 <label for="contact">Телефон / Telegram</label>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-floating mb-3">
-                                                <input type="number" class="form-control" id="age" placeholder="Вік" required>
+                                                <input type="number" class="form-control" id="age" name="age"
+                                                    placeholder="Вік" required>
                                                 <label for="age">Вік</label>
                                             </div>
                                         </div>
@@ -205,9 +209,13 @@
 
                             <!-- ФІНАЛЬНИЙ CTA (КРОК 4) -->
                             <div id="final-cta-container" class="mt-4 d-none text-center border-top pt-4">
-                                <h4 class="mb-4" style="color: #004999; font-family: 'Nunito', sans-serif;">Чудово! Тепер ти можеш отримати свій сертифікат:</h4>
-                                <a id="tg-bot-link" href="#" target="_blank" class="btn btn-success btn-lg px-5 py-3 shadow-lg" style="border-radius: 30px; font-size: 1.2rem; background-color: #0088cc; border: none;">
-                                    <img src="./images/tg.png" alt="TG" style="width: 30px; margin-right: 10px; filter: brightness(0) invert(1);">
+                                <h4 class="mb-4" style="color: #004999; font-family: 'Nunito', sans-serif;">Чудово!
+                                    Тепер ти можеш отримати свій сертифікат:</h4>
+                                <a id="tg-bot-link" href="#" target="_blank"
+                                    class="btn btn-success btn-lg px-5 py-3 shadow-lg"
+                                    style="border-radius: 30px; font-size: 1.2rem; background-color: #0088cc; border: none;">
+                                    <img src="./images/tg.png" alt="TG"
+                                        style="width: 30px; margin-right: 10px; filter: brightness(0) invert(1);">
                                     Отримати сертифікат у Telegram
                                 </a>
                             </div>
@@ -261,7 +269,11 @@
                 </div>
             </div>
             <hr class="hr-bott">
-            <div class="disclaimer"><p>Цей тест створений з метою самопізнання та розваги.<br>Результати мають виключно ознайомчий та рекомендаційний характер<br>і не є професійною експертизою чи обов'язковою інструкцією до дії.<br>Організатор не несе відповідальності за інтерпретацію результатів користувачем</p></div>
+            <div class="disclaimer">
+                <p>Цей тест створений з метою самопізнання та розваги.<br>Результати мають виключно ознайомчий та
+                    рекомендаційний характер<br>і не є професійною експертизою чи обов'язковою інструкцією до
+                    дії.<br>Організатор не несе відповідальності за інтерпретацію результатів користувачем</p>
+            </div>
             <div class="footer-bottom-block">
                 <div class="copyright"><a href="https://kitit.com.ua/" target="_blank">Авторське право © 2025 Кит®
                     </a></div>
